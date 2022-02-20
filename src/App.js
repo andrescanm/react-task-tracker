@@ -1,3 +1,5 @@
+import Header from "./components/header";
+
 function App() {
 
   const appName = `Task Tracker`;
@@ -7,6 +9,7 @@ function App() {
     <div className="container">
       <h1>React {appName}</h1>
       <small> {appDescription} </small>
+      <Header />
     </div>
   );
 }
