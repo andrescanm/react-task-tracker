@@ -26,12 +26,16 @@ function App() {
   const appName = `Task Tracker`;
   const appDescription = `A funny React App in the stack!`;
 
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  }
+
   return (
     <div className="container">
       <h1>React {appName}</h1>
       <small> {appDescription} </small>
       <Header />
-      <Tasks tasks={tasks}/>
+      <Tasks tasks={tasks} onDelete={deleteTask}/>
     </div>
   );
 }
