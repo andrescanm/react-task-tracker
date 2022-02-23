@@ -35,7 +35,9 @@ function App() {
       <h1>React {appName}</h1>
       <small> {appDescription} </small>
       <Header />
-      <Tasks tasks={tasks} onDelete={deleteTask}/>
+      { tasks.length>0 
+          ? <Tasks tasks={tasks} onDelete={deleteTask}/>
+          : 'No Task to show!' }
     </div>
   );
 }
