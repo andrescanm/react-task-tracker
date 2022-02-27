@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AddTask from "./components/addtask";
 import Header from "./components/header";
 import Tasks from "./components/tasks";
 
@@ -26,6 +27,12 @@ function App() {
   const appName = `Task Tracker`;
   const appDescription = `A funny React App in the stack!`;
 
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 10000 + 1);
+    const newTask = {id, ...task};
+    setTasks([...tasks, newTask]);
+  }
+
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   }
@@ -46,6 +53,7 @@ function App() {
       <h1>React {appName}</h1>
       <small> {appDescription} </small>
       <Header />
+      <AddTask onAdd={addTask} />
       { tasks.length>0 
           ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/>
           : 'No Task to show!' }
