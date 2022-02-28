@@ -1,21 +1,34 @@
 {
-	"tasks": [{
-			"id": 1,
-			"text": "Task number 1.",
-			"day": "Monday at 8: 00AM",
-			"reminder": true
-		},
-		{
-			"id": 2,
-			"text": "Task number 2.",
-			"day": "Monday at 8: 00AM",
-			"reminder": true
-		},
-		{
-			"id": 3,
-			"text": "Task number 3.",
-			"day": "Monday at 8: 00AM",
-			"reminder": true
-		}
-	]
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Task number 1.",
+      "day": "Monday at 8: 00AM",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Task number 2.",
+      "day": "Monday at 8: 00AM",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Task number 3.",
+      "day": "Monday at 8: 00AM",
+      "reminder": true
+    },
+    {
+      "text": "New Task",
+      "day": "Wed, at 03:20PM",
+      "reminder": false,
+      "id": 4
+    },
+    {
+      "text": "Meeting 5",
+      "day": "Friday at 09:00AM",
+      "reminder": true,
+      "id": 5
+    }
+  ]
 }
