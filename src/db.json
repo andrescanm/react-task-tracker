@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Task number 1.",
       "day": "Monday at 8: 00AM",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
@@ -13,22 +13,10 @@
       "reminder": true
     },
     {
-      "id": 3,
-      "text": "Task number 3.",
-      "day": "Monday at 8: 00AM",
-      "reminder": true
-    },
-    {
-      "text": "New Task",
-      "day": "Wed, at 03:20PM",
-      "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "Meeting 5",
-      "day": "Friday at 09:00AM",
+      "text": "Taks number 3",
+      "day": "",
       "reminder": true,
-      "id": 5
+      "id": 3
     }
   ]
 }
